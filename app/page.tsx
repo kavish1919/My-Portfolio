@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'; // This directive is needed for interactive elements
 
 import { useState, useEffect } from 'react';

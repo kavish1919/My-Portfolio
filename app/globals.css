@@ -1,40 +1,24 @@
-/* Import Tailwind's base, components, and utilities layers.
-  This is required for Tailwind to work in a Next.js project.
-*/
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-/* Define CSS variables for your brand colors.
-  This allows you to use them easily in your tailwind.config.js
-*/
-:root {
-  --brand-dark: #1E1E1F;
-  --brand-purple: #8377D1;
-  --brand-orange: #F79824;
-  --brand-light: #EBEBEB;
+@theme {
+  --color-brand-dark: #1E1E1F;
+  --color-brand-purple: #8377D1;
+  --color-brand-orange: #F79824;
+  --color-brand-light: #EBEBEB;
+  --font-inter: var(--font-inter), sans-serif;
 }
 
-/* Define a custom font variable that can be used
-  in your tailwind.config.js
-*/
-:root {
-  --font-inter: 'Inter', sans-serif;
-}
-
-/* Custom scrollbar styling for a more modern look.
-  This is a global style, so it's placed here.
-*/
+/* Custom scrollbar styling for a more modern look. */
 ::-webkit-scrollbar {
-    width: 8px;
+  width: 8px;
 }
 ::-webkit-scrollbar-track {
-    background: #1E1E1F;
+  background: #1E1E1F;
 }
 ::-webkit-scrollbar-thumb {
-    background: #8377D1;
-    border-radius: 10px;
+  background: #8377D1;
+  border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #6a5faf;
+  background: #6a5faf;
 }
